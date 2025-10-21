@@ -1,0 +1,7 @@
+pytest
+pyright
+pre-commit
+ruff
+setuptools
+pytest-asyncio
+py-sc-async-client
