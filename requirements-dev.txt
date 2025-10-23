@@ -4,4 +4,4 @@ pre-commit
 ruff
 setuptools
 pytest-asyncio
-py-sc-async-client
+git+https://github.com/kretoffer/py_sc_async_client.git

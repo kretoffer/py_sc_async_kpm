@@ -18,4 +18,4 @@ repos:
     rev: v1.1.354
     hooks:
       - id: pyright
-        additional_dependencies: [websockets, pytest]
+        additional_dependencies: [git+https://github.com/kretoffer/py_sc_async_client.git]

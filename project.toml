@@ -1,5 +1,5 @@
 [project]
-name = "sc_async_client"
+name = "sc_async_kpm"
 requires-python = ">=3.8"
 
 [tool.ruff]
