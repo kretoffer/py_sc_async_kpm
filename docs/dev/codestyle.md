@@ -3,15 +3,13 @@
 This project uses Ruff as the primary linter and formatter to enforce consistent code style and quality. Below are the key style rules and configuration settings.
 
 ## Target Python Version
-- Code must be compatible with Python 3.8
+- Code must be compatible with Python 3.9
 
 - Avoid syntax and standard library features introduced in later versions:
 
   - No match statements (Python 3.10+)
 
-  - No str.removeprefix() or str.removesuffix() (Python 3.9+)
-
-  - Use TypedDict from typing instead of typing_extensions only if available in 3.8
+  - Use TypedDict from typing instead of typing_extensions only if available in 3.9
 
 ## Auto-Fix Enabled
 - Ruff is configured to automatically fix style violations
@@ -30,6 +28,6 @@ ruff check . --fix
 ```
 [tool.ruff]
 line-length = 100
-target-version = "py38"
+target-version = "py39"
 fix = true
 ```
