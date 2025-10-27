@@ -6,6 +6,8 @@ from sc_async_client.models import ScAddr
 from sc_async_kpm.sc_sets.sc_set import ScSet
 from sc_async_kpm.utils.common_utils import generate_node
 
+from typing import Optional
+
 
 class ScStructure(ScSet):
     """
@@ -27,8 +29,8 @@ class ScStructure(ScSet):
     async def create(
         cls,
         *elements: ScAddr,
-        set_node: ScAddr | None = None,
-        set_node_type: ScType | None = None,
+        set_node: Optional[ScAddr] = None,
+        set_node_type: Optional[ScType] = None,
     ) -> "ScStructure":
         if set_node_type is None:
             set_node_type = sc_type.CONST_NODE_STRUCTURE

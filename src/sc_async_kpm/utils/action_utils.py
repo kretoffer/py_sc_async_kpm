@@ -5,7 +5,7 @@ Distributed under the MIT License
 """
 
 import asyncio
-from typing import Dict, List, Tuple, Union, cast
+from typing import Dict, List, Tuple, Union, cast, Optional
 
 from sc_async_client import client
 from sc_async_client.client import (
@@ -178,7 +178,7 @@ async def call_action(
 
 
 async def wait_agent(
-    seconds: float, action_node: ScAddr, reaction_node: ScAddr | None = None
+    seconds: float, action_node: ScAddr, reaction_node: Optional[ScAddr] = None
 ) -> None:
     reaction_node = reaction_node or await ScKeynodes.get_by_idtf(
         ActionStatus.ACTION_FINISHED
