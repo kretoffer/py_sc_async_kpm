@@ -1,5 +1,9 @@
 # py-sc-async-kpm
 
+[![codecov](https://codecov.io/gh/kretoffer/py_sc_async_kpm/graph/badge.svg?token=95R6TLPQD2)](https://codecov.io/gh/kretoffer/py_sc_async_kpm)
+[![Tests](https://github.com/kretoffer/py_sc_async_kpm/actions/workflows/tests.yml/badge.svg)](https://github.com/kretoffer/py_sc_async_kpm/actions/workflows/tests.yml)
+[![Release](https://github.com/kretoffer/py_sc_async_kpm/actions/workflows/release.yml/badge.svg)](https://github.com/kretoffer/py_sc_async_kpm/actions/workflows/release.yml)
+
 The asynchronous python implementation of the knowledge processing machine (kpm)
 for [sc-machine](httpshttps://github.com/ostis-ai/sc-machine).
 Library provides tools for interacting with knowledge bases.
